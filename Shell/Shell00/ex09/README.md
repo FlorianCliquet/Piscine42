@@ -17,8 +17,7 @@ The objective of this exercise is to create a magic file named `ft_magic` that i
 1. **Open a text editor.**
 2. **Enter the following content into the text editor:**
 ```sh
-0       string          42              Files identified as type 42
->42     string          42              Contains "42" at 42nd byte
+41 string 42 42 file type
 ```
 
 Explanation of the Content:
