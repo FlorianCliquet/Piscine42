@@ -27,7 +27,7 @@ touch testShell00
 ```
 2. Add 40 bytes into the file:
 ```sh
-
+truncate -s 40 testShell00
 ```
 3. Set the file permissions:
 ```sh
