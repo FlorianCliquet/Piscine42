@@ -42,7 +42,7 @@ Explanation:
 3. Create the git_commit.sh file and add the command:
 ```sh
 echo '#!/bin/bash' > git_commit.sh
-echo 'git log --format="%H" -n 5 | cat -e' >> git_commit.sh
+echo 'git log --format="%H" -n 5' >> git_commit.sh
 ```
 4. Make the script executable:
 ```sh
