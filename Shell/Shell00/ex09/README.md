@@ -22,8 +22,11 @@ The objective of this exercise is to create a magic file named `ft_magic` that i
 
 Explanation of the Content:
 - The file `ft_magic` uses the format understood by the `file` command to identify file types.
-- `0 string 42`: Specifies that files identified with the string "42" are type 42 files.
-- `>42 string 42`: Specifies that files containing the string "42" at the 42nd byte are also type 42 files.
+- '41 string 42 42 file'
+- '41' means that will check the byte number 41 as it is 0 indexed
+- 'string' is the type of the value we are looking for
+- '42' is the test value
+- '42 file' is the out put message 
 
 3. **Save the file as `ft_magic` in the directory `ex09/`.**
 
