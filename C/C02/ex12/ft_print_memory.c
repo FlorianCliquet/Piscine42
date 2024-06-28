@@ -6,7 +6,7 @@
 /*   By: florian <florian@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/27 18:26:50 by fcliquet          #+#    #+#             */
-/*   Updated: 2024/06/27 21:54:29 by florian          ###   ########.fr       */
+/*   Updated: 2024/06/28 13:50:49 by florian          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,9 @@
 
 void	print_hexa_memory_addr(unsigned long addr)
 {
-	char		*base;
-	unsigned long	temp;
-	char		buffer[16];
-	int		i;
+	char				*base;
+	char				buffer[16];
+	int					i;
 
 	base = "0123456789abcdef";
 	i = 0;
@@ -34,35 +33,42 @@ void	print_hexa_memory_addr(unsigned long addr)
 	write(1, ": ", 2);
 }
 
-void	ft_print_memory(void *addr, unsigned int size)
+void	doubleloop(unsigned char *ptr, unsigned int i, unsigned int size)
 {
-	unsigned int	i;
-	unsigned int	j;
-	unsigned char	*ptr;
-	char		*base;
+	char	*base;
+	int		j;
 
 	base = "0123456789abcdef";
+	j = 0;
+	while (j < 16 && i + j < size)
+	{
+		write(1, base + (ptr[i + j] / 16), 1);
+		write(1, base + (ptr[i + j] % 16), 1);
+		if (j % 2 == 1)
+			write(1, " ", 1);
+		j++;
+	}
+	while (j < 16)
+	{
+		write(1, "  ", 2);
+		if (j % 2 == 1)
+			write(1, " ", 1);
+		j++;
+	}
+}
+
+void	ft_print_memory(void *addr, unsigned int size)
+{
+	unsigned int		i;
+	unsigned char		*ptr;
+	unsigned int		j;
+
 	ptr = (unsigned char *)addr;
 	i = 0;
 	while (i < size)
 	{
 		print_hexa_memory_addr((unsigned long)(addr + i));
-		j = 0;
-		while (j < 16 && i + j < size)
-		{
-			write(1, base + (ptr[i + j] / 16), 1);
-			write(1, base + (ptr[i + j] % 16), 1);
-			if (j % 2)
-				write(1, " ", 1);
-			j++;
-		}
-		while (j < 16)
-		{
-			write(1, "  ", 2);
-			if (j % 2)
-				write(1, " ", 1);
-			j++;
-		}
+		doubleloop(ptr, i, size);
 		j = 0;
 		while (j < 16 && i + j < size)
 		{
@@ -77,11 +83,13 @@ void	ft_print_memory(void *addr, unsigned int size)
 	}
 }
 
+/*
 int main(void)
 {
-    char data[] = "Bonjour les aminches\t\n\tc  est fou.tout.ce qu on peut faire avec\t\n\tprint_memory. \t\n\tlol.lol";
-    
+    char data[] = "Bonjour les aminches\t\n\tc
+ est fou.tout.ce qu on peut faire avec\t\n\tprint_memory. \t\n\tlol.lol";
     ft_print_memory(data, sizeof(data));
 
     return 0;
 }
+*/
