@@ -101,3 +101,5 @@ During the execution of ft_print_comb2, the function performs a series of nested
         - For the second iteration (a = '1', b = '0'):
             - c starts at '1' and d starts at '1'.
             - Inner loop prints combinations like 10 11, 10 12, ..., 10 19.
+Each iteration of ft_print_comb2 generates and prints unique pairs of digits in ascending order, following the format specified (ab cd). The output continues until all valid combinations are printed, ensuring correct formatting with commas and spaces between pairs.
+
