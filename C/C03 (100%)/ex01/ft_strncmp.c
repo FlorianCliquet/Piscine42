@@ -24,7 +24,7 @@ int	ft_strncmp(char *s1, char *s2, unsigned int n)
 	if ((s1[index] != '\0') && (s2[index] == '\0') && (index < n))
 		return (s1[index]);
 	else if ((s1[index] == '\0') && (s2[index] != '\0') && (index < n))
-		return (s2[index]);
+		return (-s2[index]);
 	else
 		return (0);
 }

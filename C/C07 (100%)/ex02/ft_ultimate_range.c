@@ -1,32 +1,42 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_ultimate_range.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: fcliquet <fcliquet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/27 00:00:29 by florian           #+#    #+#             */
-/*   Updated: 2024/06/27 17:59:36 by fcliquet         ###   ########.fr       */
+/*   Created: 2024/07/01 14:19:55 by fcliquet          #+#    #+#             */
+/*   Updated: 2024/07/01 14:19:56 by fcliquet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-unsigned int	ft_strlcpy(char *dest, const char *src, unsigned int size)
-{
-	unsigned int	index;
-	unsigned int	x;
+#include <stdlib.h>
 
-	index = 0;
-	x = 0;
-	while (src[x])
-		x++;
-	if (size != 0)
+int	ft_ultimate_range(int **range, int min, int max)
+{
+	int	size;
+	int	*ptr;
+	int	i;
+
+	if (min >= max)
 	{
-		while (src[index] != '\0' && index < (size - 1))
-		{
-			dest[index] = src[index];
-			index++;
-		}
-		dest[index] = '\0';
+		*range = 0;
+		return (0);
 	}
-	return (x);
+	size = max - min;
+	ptr = (int *)malloc(sizeof(int) * size);
+	if (ptr == NULL)
+	{
+		*range = 0;
+		return (-1);
+	}
+	i = 0;
+	while (min < max)
+	{
+		ptr[i] = min;
+		i++;
+		min++;
+	}
+	*range = ptr;
+	return (size);
 }

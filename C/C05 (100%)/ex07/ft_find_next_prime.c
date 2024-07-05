@@ -1,32 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_find_next_prime.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: fcliquet <fcliquet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/27 00:00:29 by florian           #+#    #+#             */
-/*   Updated: 2024/06/27 17:59:36 by fcliquet         ###   ########.fr       */
+/*   Created: 2024/06/30 20:04:39 by fcliquet          #+#    #+#             */
+/*   Updated: 2024/07/02 18:39:15 by fcliquet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-unsigned int	ft_strlcpy(char *dest, const char *src, unsigned int size)
+int	ft_find_next_prime(int nb)
 {
-	unsigned int	index;
-	unsigned int	x;
+	unsigned int	i;
 
-	index = 0;
-	x = 0;
-	while (src[x])
-		x++;
-	if (size != 0)
+	if (nb < 3)
+		return (2);
+	if (!(nb % 2))
+		nb++;
+	i = 3;
+	while (i * i <= (unsigned int)nb)
 	{
-		while (src[index] != '\0' && index < (size - 1))
+		if (!(nb % i))
 		{
-			dest[index] = src[index];
-			index++;
+			nb += 2;
+			i = 1;
 		}
-		dest[index] = '\0';
+		i += 2;
 	}
-	return (x);
+	return (nb);
 }

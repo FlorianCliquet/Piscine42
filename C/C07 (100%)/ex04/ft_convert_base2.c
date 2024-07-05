@@ -1,32 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_convert_base2.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: fcliquet <fcliquet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/27 00:00:29 by florian           #+#    #+#             */
-/*   Updated: 2024/06/27 17:59:36 by fcliquet         ###   ########.fr       */
+/*   Created: 2024/07/03 05:22:46 by fcliquet          #+#    #+#             */
+/*   Updated: 2024/07/03 05:22:47 by fcliquet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-unsigned int	ft_strlcpy(char *dest, const char *src, unsigned int size)
+void	why_this_useless_file(void)
 {
-	unsigned int	index;
-	unsigned int	x;
-
-	index = 0;
-	x = 0;
-	while (src[x])
-		x++;
-	if (size != 0)
-	{
-		while (src[index] != '\0' && index < (size - 1))
-		{
-			dest[index] = src[index];
-			index++;
-		}
-		dest[index] = '\0';
-	}
-	return (x);
+	return ;
 }

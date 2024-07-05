@@ -1,32 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_swap.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: fcliquet <fcliquet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/27 00:00:29 by florian           #+#    #+#             */
-/*   Updated: 2024/06/27 17:59:36 by fcliquet         ###   ########.fr       */
+/*   Created: 2024/06/26 18:05:56 by fcliquet          #+#    #+#             */
+/*   Updated: 2024/06/26 18:05:57 by fcliquet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-unsigned int	ft_strlcpy(char *dest, const char *src, unsigned int size)
+void	ft_swap(int *a, int *b)
 {
-	unsigned int	index;
-	unsigned int	x;
+	int	tmp;
 
-	index = 0;
-	x = 0;
-	while (src[x])
-		x++;
-	if (size != 0)
-	{
-		while (src[index] != '\0' && index < (size - 1))
-		{
-			dest[index] = src[index];
-			index++;
-		}
-		dest[index] = '\0';
-	}
-	return (x);
+	tmp = *a;
+	*a = *b;
+	*b = tmp;
 }

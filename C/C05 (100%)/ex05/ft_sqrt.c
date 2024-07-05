@@ -1,32 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_sqrt.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: fcliquet <fcliquet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/27 00:00:29 by florian           #+#    #+#             */
-/*   Updated: 2024/06/27 17:59:36 by fcliquet         ###   ########.fr       */
+/*   Created: 2024/06/30 19:43:51 by fcliquet          #+#    #+#             */
+/*   Updated: 2024/07/02 18:40:01 by fcliquet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-unsigned int	ft_strlcpy(char *dest, const char *src, unsigned int size)
+int	ft_sqrt(int nb)
 {
-	unsigned int	index;
-	unsigned int	x;
+	unsigned int	i;
 
-	index = 0;
-	x = 0;
-	while (src[x])
-		x++;
-	if (size != 0)
-	{
-		while (src[index] != '\0' && index < (size - 1))
-		{
-			dest[index] = src[index];
-			index++;
-		}
-		dest[index] = '\0';
-	}
-	return (x);
+	if (nb < 1)
+		return (0);
+	i = 1;
+	while (i * i < (unsigned int)nb)
+		i++;
+	if (i * i == (unsigned int)nb)
+		return (i);
+	else
+		return (0);
 }
