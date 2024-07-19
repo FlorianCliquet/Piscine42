@@ -41,7 +41,7 @@ This repository contains my solutions for the C exercises from the 42 Piscine pr
 **Rating:** 100/100
 
 ### [C12](./C12%20(100%25)/)
-**Rating:** 100/100
+**Rating:** Should be 100/100
 
 ### [C13](./C13%20(100%25)/)
-**Rating:** 100/100
+**Rating:** Should be 100/100

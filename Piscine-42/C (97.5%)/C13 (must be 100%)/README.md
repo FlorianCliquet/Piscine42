@@ -2,8 +2,6 @@
 
 This repository contains exercises and their solutions for C13.
 
-![C13](../../Assets%20for%20README/C13.png)
-
 ## Exercises:
 
 ### Exercise 00:

@@ -2,8 +2,6 @@
 
 This repository contains exercises and their solutions for C12.
 
-![C12](../../Assets%20for%20README/C12.png)
-
 ## Exercises:
 
 ### Exercise 00:
