@@ -16,4 +16,4 @@ This repository contains exercises and their solutions for C10.
 - [README](ex02/README.md)
 
 ### Exercise 03:
-- [README](ex02/README.md)
+- [README](ex03/README.md)
