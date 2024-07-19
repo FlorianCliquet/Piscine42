@@ -2,6 +2,8 @@
 
 This repository contains exercises and their solutions for Shell00.
 
+![Shell00](../../Assets%20for%20README/Shell00.png)
+
 ## Exercises:
 
 ### Exercise 00: Z

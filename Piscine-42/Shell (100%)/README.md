@@ -4,8 +4,8 @@ This repository contains my solutions for the Shell exercises from the 42 Piscin
 
 ## Modules
 
-### [Shell00](./Shell00)
+### [Shell00](./Shell00%20(100%25)/)
 **Rating:** 100/100
 
-### [Shell01](./Shell01)
+### [Shell01](./Shell01%20(100%25)/)
 **Rating:** 100/100
