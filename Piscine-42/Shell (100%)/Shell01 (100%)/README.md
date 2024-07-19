@@ -2,7 +2,7 @@
 
 This repository contains exercises and their solutions for Shell01.
 
-![Shell01](../../Assets%20for%20README/Shell01.png)
+![Shell01](../../../Assets%20for%20README/Shell01.png)
 
 ## Exercises:
 
