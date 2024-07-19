@@ -2,7 +2,7 @@
 
 This repository contains exercises and their solutions for C07.
 
-![C07](../../Assets%20for%20README/C07.png)
+![C07](../../../Assets%20for%20README/C07.png)
 
 ## Exercises:
 

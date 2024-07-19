@@ -2,7 +2,7 @@
 
 This repository contains exercises and their solutions for C11.
 
-![C11](../../Assets%20for%20README/C11.png)
+![C11](../../../Assets%20for%20README/C11.png)
 
 ## Exercises:
 

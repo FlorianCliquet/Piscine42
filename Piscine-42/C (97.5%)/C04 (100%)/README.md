@@ -2,7 +2,7 @@
 
 This repository contains exercises and their solutions for C04.
 
-![C04](../../Assets%20for%20README/C04.png)
+![C04](../../../Assets%20for%20README/C04.png)
 
 ## Exercises:
 

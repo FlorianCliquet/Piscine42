@@ -2,7 +2,7 @@
 
 This repository contains exercises and their solutions for C10.
 
-![C10](../../Assets%20for%20README/C10.png)
+![C10](../../../Assets%20for%20README/C10.png)
 
 ## Exercises:
 

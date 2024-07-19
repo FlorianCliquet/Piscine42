@@ -2,7 +2,7 @@
 
 This repository contains exercises and their solutions for C01.
 
-![C01](../../Assets%20for%20README/C01.png)
+![C01](../../../Assets%20for%20README/C01.png)
 
 ## Exercises:
 

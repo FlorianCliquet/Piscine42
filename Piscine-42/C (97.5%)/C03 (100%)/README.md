@@ -2,7 +2,7 @@
 
 This repository contains exercises and their solutions for C03.
 
-![C03](../../Assets%20for%20README/C03.png)
+![C03](../../../Assets%20for%20README/C03.png)
 
 ## Exercises:
 

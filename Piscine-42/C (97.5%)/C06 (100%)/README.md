@@ -2,7 +2,7 @@
 
 This repository contains exercises and their solutions for C06.
 
-![C06](../../Assets%20for%20README/C06.png)
+![C06](../../../Assets%20for%20README/C06.png)
 
 ## Exercises:
 

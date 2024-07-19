@@ -2,7 +2,7 @@
 
 This repository contains exercises and their solutions for C00.
 
-![C00](../../Assets%20for%20README/C00.png)
+![C00](../../../Assets%20for%20README/C00.png)
 
 ## Exercises:
 

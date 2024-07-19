@@ -2,7 +2,7 @@
 
 This repository contains exercises and their solutions for C05.
 
-![C05](../../Assets%20for%20README/C05.png)
+![C05](../../../Assets%20for%20README/C05.png)
 
 ## Exercises:
 

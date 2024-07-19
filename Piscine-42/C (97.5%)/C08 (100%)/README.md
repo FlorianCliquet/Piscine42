@@ -2,6 +2,8 @@
 
 This repository contains exercises and their solutions for C08.
 
+![C08](../../../Assets%20for%20README/C08.png)
+
 ## Exercises:
 
 ### Exercise 00:

@@ -2,6 +2,8 @@
 
 This repository contains exercises and their solutions for C09.
 
+![C09](../../../Assets%20for%20README/C09.png)
+
 ## Exercises:
 
 ### Exercise 00:

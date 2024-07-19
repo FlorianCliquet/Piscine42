@@ -2,7 +2,7 @@
 
 This repository contains exercises and their solutions for C02.
 
-![C02](../../Assets%20for%20README/C02.png)
+![C02](../../../Assets%20for%20README/C02.png)
 
 ## Exercises:
 
