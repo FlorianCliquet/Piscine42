@@ -38,12 +38,6 @@ The [Rush](./Rush%20(66%25)/) folder contains projects from the "Rush" series, w
 
 The [Shell](./Shell%20(100%25)/) folder includes projects related to shell scripting and command-line tools. These projects emphasize the use of Unix/Linux shell commands and scripting to automate tasks and solve problems efficiently.
 
-**Projects:**
-- **Shell 00:** Description of the first shell project.
-- **Shell 01:** Description of the second shell project.
-- **Shell 02:** Description of the third shell project.
-- And more...
-
 **Overall Score:** 100%
 
 ## Warning
